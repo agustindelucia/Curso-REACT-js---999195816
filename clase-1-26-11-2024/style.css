@@ -1,0 +1,42 @@
+/*reset CSS*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex; /*posubilidad de mover libremente los objetos*/
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  /*altura pára separacion arriba*/
+    background-color: rgb(36, 41, 41);/*color fondo de la pagina*/
+}
+
+.conteiner { /* contiene a todo el div */
+    text-align: center; 
+    border: 1px solid black; /*borde con linea continua*/
+    border-radius: 10px;
+    padding: 20px; /*espacio que se genera dentro entre las letras y la linea de la caja*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*sombra en el exterior de la caja*/
+    background-color: aliceblue; /*color de fondo de la caja bienvenidos*/
+} 
+
+h1, p {
+   margin-bottom: 10px; /*sepacion interlineado*/
+}
+
+button {
+    background-color: #007BFF; /*color de fondo boton*/
+    color: white; /*color de letra boton*/
+    padding: 10px 20px; /*espacio en letras y caja boton*/
+    font-size: 16px; /*tamaño letra dentro del boton*/
+    cursor: pointer; /*que el cursor sobre el boton se convierta en una mano*/
+    border-radius: 10px;
+    border: none; /*boton sin linea en el borde*/
+    transition: opacity 0.3s; /*transicion del boton cuando se le pone el cursor encima*/
+}
+
+button:hover {
+    opacity: .8; /*para que cambie de color cuando se le ponga el cursor encima*/
+}
