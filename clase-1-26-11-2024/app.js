@@ -1,3 +1,5 @@
+//DESARROLLO ALGORITMICO PARA DARLE FUNCION A UN BOTON PARA QUE CAMBIE DE COLOR CADA VEZ QUE SE HAGA CLICK
+
 //con estos comando puedo manejar elementos del html desde javascript, dandole logica y funcionalidad
 const button = document.getElementById("changeColorButton") //variable boton y como llamar el elemento como esta en el index
 const body = document.body //traer la referencia del body
@@ -11,8 +13,8 @@ const colors = [ //seleccion de 20 colores para que cambie el fondo cuando se ap
   ];
 
 button.addEventListener("click", () => { //codigo para añadir el evento click en el boton y haga una funcion
-    const ramdomColor = colors[Math.floor(Math.random() * colors.length)]
+    const ramdomColor = colors[Math.floor(Math.random() * colors.length)] //codigo para que el click sea de seleccion random
 
-    body.style.backgroundColor = ramdomColor 
+    body.style.backgroundColor = ramdomColor // estilo al body para que aparezca un color random en el body 
   })
   
