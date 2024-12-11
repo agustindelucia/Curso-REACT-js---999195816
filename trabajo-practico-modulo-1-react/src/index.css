@@ -1,0 +1,28 @@
+body {
+  background-color: black;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+/* comando para alinear cada bloque uno abajo del otro*/
+label {
+  display: block; 
+}
+
+input {
+  width: 100%;
+} 
+
+button {
+  margin: 5%;
+}
+
+/*estilo mensaje de error en campo nombre*/
+span { 
+  display: block;
+  color: tomato;
+  font-size: x-small;
+}
